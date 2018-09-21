@@ -2,36 +2,6 @@
 #include <vector>
 
 
-//attempt
-/*
-        if (node->isLeaf)
-        {
-            //Esiest one
-            if (node->numOfValues > 1)
-            {
-                node->values[i] = constants::InvalidValue;
-                --node->numOfValues;
-            }
-            //if it is the only value
-        }
-        else
-        {
-            //if it is single value and one of its children has at least two values
-            if (1 == node->numOfValues &&
-                (node->children[0]->numOfValues > 1 || node->children[1]->numOfValues >1))
-            {
-                applyInternalRemoving(*node);
-            }
-            //or is the value between and one of its children has at least two values
-            else if ((1 == i && constants::MaxNumberOfValues == node->numOfValues) &&
-                (node->children[1]->numOfValues > 1 || node->children[2]->numOfValues >1))
-            {
-                applyInternalRemoving(*node, i);
-            }
-        }
- */
-
-
 //We assume -1 as input node value is used as invalid, consequently
 //there is no value assigned
 
