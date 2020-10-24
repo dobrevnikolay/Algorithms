@@ -1,7 +1,7 @@
 /*
  * BinarySearchTree.cpp
  *
- *  Created on: 05.06.2016 ã.
+ *  Created on: 05.06.2016 Ã£.
  *      Author: NikolayD
  */
 
@@ -143,7 +143,7 @@ ReturnInfo DeleteNodeByID(Node ** T, const int ID)
 
 			if((*T)->left && (*T)->right)
 			{
-				Node *replace = findMinNode(T);
+				Node *replace = findMinNode(&(*T)->right);
 				(*T)->ID = replace->ID;
 				(*T)->Data = replace->Data;
 				replace->ID = ID;
